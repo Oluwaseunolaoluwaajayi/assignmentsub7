@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.genLayout {
+  max-width: 1000px;
+  margin: auto;
+}
+body {
+  background-color: grey;
+}
+
+/* .BDY {
+
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+} */
+
+.container {
+  margin-block: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px;
+  position: relative;
+}
+
+.boxes {
+  height: 30vh;
+  border-radius: 4px;
+  background-color: black;
+  position: relative;
+}
+
+.boxes > h2 {
+  background-color: brown;
+  color: whitesmoke;
+  border-radius: 50px;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Center h2 in the middle */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.boxes > span {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: red;
+  background-color: black;
+
+  /* Position mic in the top-right corner */
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.boxes > p {
+  color: whitesmoke;
+
+  /* Position p tag in the bottom-left corner */
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+/* foot of the container */
+.footerhead {
+  border: 2px solid blue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer {
+  display: flex;
+  font-size: small;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+}
+.footerhead {
+  display: flex;
+
+  align-items: center;
+
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  align-items: center;
+}
+.footInner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5px;
+}
+
+.baseone,
+.basetwo,
+.basethree,
+.basefour,
+.basefive,
+.basesix {
+  border: 2px solid;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  border-radius: 100%;
+  background-color: red;
+  margin: 0;
+}
